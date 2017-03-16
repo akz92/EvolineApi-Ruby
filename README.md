@@ -3,7 +3,8 @@
 
 # evoline
 
-Gem pra acessar a API da Evoline. Por enquanto apenas os endpoints de SMS estão implementados.
+Gem pra acessar a API da Evoline.
+Apenas os endpoints de SMS e TTS estão implementados.
 
 Documentação: http://www.rubydoc.info/gems/evoline/0.0.1/index
 
