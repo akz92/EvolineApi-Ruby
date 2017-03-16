@@ -13,8 +13,6 @@ module Evoline
       self.send_request(method, path, params)
     end
 
-    private
-
     def self.send_request(method, path, params)
       uri = Evoline.build_uri(path)
 
@@ -27,5 +25,7 @@ module Evoline
         http.request(request)
       end
     end
+
+    private_class_method :send_request
   end
 end
