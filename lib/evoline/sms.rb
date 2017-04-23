@@ -22,8 +22,6 @@ module Evoline
       APIRequest.request(:get, PATH_MAP[:report])
     end
 
-    private
-
     def self.build_send_params(number, message, wait_answer = false)
       {
         numero_destino: number,
@@ -31,5 +29,7 @@ module Evoline
         resposta_usuario: wait_answer
       }
     end
+
+    private_class_method :build_send_params
   end
 end
